@@ -23,7 +23,7 @@ var changeState = function(state) {
 
 			console.log('randonNumber:', randomNumber)
 
-			if (randomNumber > 5) {
+			if (randomNumber > 2) {
 				changeState(4);
 			}	else {
 				changeState(5);
