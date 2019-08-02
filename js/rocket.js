@@ -1,3 +1,7 @@
+//setTimeout(function () {
+	//location.href = 'rocket.html';
+//}, 2000);
+
 var timer = null;
 var countdownNumber = 10;
 
@@ -13,6 +17,18 @@ var changeState = function(state) {
 			countdownNumber = countdownNumber-1;
 			document.getElementById('countdown').innerHTML = countdownNumber;
 			
+			if (countdownNumber > 3 && countdownNumber <=6) {
+				document.getElementById('nervous').className = 'nervous show';
+			} else{
+				document.getElementById('nervous').className = 'nervous';
+			};
+
+			if (countdownNumber >0 && countdownNumber== 3) {
+				document.getElementById('cant-wait').className = 'cant-wait show';
+			} else{
+				document.getElementById('cant-wait').className = 'cant-wait';
+			};			
+
 			if (countdownNumber <= -1) {
 				changeState(3);
 			}

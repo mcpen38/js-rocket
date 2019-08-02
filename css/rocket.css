@@ -1,3 +1,7 @@
+body{
+	font-family: 'helvetica', 'arial', 'sans-serif';
+}
+
 .left{
 	background-color: aquamarine;
 	position: fixed;
@@ -5,7 +9,27 @@
 	height: 100%;
 	top: 0;
 	left: 9;
+}
 
+.interface{
+	text-align: center;
+	margin-top: 50%;
+	padding: 20px;
+}
+
+a.button{
+	display: inline-block;
+	background-color: lightgrey;
+	color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+	border-radius:	20px;
+	text-transform: uppercase;
+	transition: color 300ms;
+}
+
+a:hover{
+	color: red;
 }
 
 .right{
@@ -26,12 +50,41 @@
 	width: 100%;
 	height: 20px;
 }
+
+.nervous{
+	position: absolute;
+	bottom: 200px;
+	left: 65%;
+	background: url('../img/okay.png') no-repeat 0 0;
+	width: 141px;
+	height: 72px;
+	display: none;
+}
+
+.nervous.show{
+	display: block;
+}
+
+.cant-wait{
+	position: absolute;
+	bottom: 200px;
+	left: 65%;
+	background: url('../img/cantwait.png') no-repeat 0 0;
+	width: 140px;
+	height: 95px;
+	display: none;
+}
+
+.cant-wait.show{
+	display: block;
+}
+
 .rocket{
 	position: absolute;
 	left: 36%;
 	bottom: 5px;
 	width: 159px;
-	height: 232px;
+	height: 227px;
 	background: url('../img/rocket1.png') no-repeat 0 0; 
 	transition: bottom 10000ms;
 }
