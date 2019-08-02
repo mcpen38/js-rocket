@@ -22,11 +22,11 @@ var changeState = function(state) {
 			var randomNumber = Math.round(Math.random()*10);
 
 			console.log('randonNumber:', randomNumber)
-
+			//succes
 			if (randomNumber > 2) {
 				changeState(4);
 			}	else {
-				changeState(5);
+				changeState(5); //oh no!
 			}
 			}, 2000);
 	}
